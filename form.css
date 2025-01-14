@@ -1,0 +1,73 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+}
+
+.form__title {
+  font-family: "Press Start 2P";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.form__input {
+  border: solid #03318c 3px;
+  font-family: IBM Plex Mono;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #03318c;
+  height: 58px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.form__input::placeholder {
+  color: #03318c;
+}
+
+.form__buttons {
+  display: flex;
+  gap: 13px;
+}
+
+.form__button {
+  font-family: IBM Plex Mono;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 164px;
+  aspect-ratio: 164 / 55;
+  border-radius: 15px;
+}
+
+.form__button--submit {
+  color: #fff;
+  background-color: #03318c;
+  border: 3px solid #03318c;
+}
+
+.form__button--reset {
+  color: #03318c;
+  background-color: #fff;
+  border: 3px solid #03318c;
+}

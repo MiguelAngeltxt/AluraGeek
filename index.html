@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>challenge AluraGeek</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./images/Logo (1).png"
+        alt="logo alurageek"
+      />
+    </header>
+    <main class="main-content">
+      <section class="product__section">
+        <h1 class="product__title">MIS PRODUCTOS</h1>
+        <div class="product__card card">
+          <img
+            class="card__image"
+            src="./assets/producto1.png"
+            alt="Producto 1"
+          />
+          <div class="card__info card-container--info">
+            <p class="card__name">Nombre</p>
+            <div class="card__value card-container--value">
+              <p class="card__price">$ 00.00</p>
+              <img
+                class="card__trash-icon"
+                src="./assets/trashIcon.png"
+                alt="Eliminar producto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <h1 class="form__title">AGREGAR PRODUCTO:</h1>
+        <div class="form__container">
+          <form class="form__form" action="">
+            <input class="form__input" type="text" placeholder="nombre..." />
+            <input class="form__input" type="text" placeholder="precio..." />
+            <input class="form__input" type="text" placeholder="imagen..." />
+            <div class="form__buttons">
+              <input
+                class="form__button form__button--submit"
+                type="submit"
+                value="Enviar"
+              />
+              <input
+                class="form__button form__button--reset"
+                type="reset"
+                value="Limpiar"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <img
+          class="footer__logo"
+          src="./images/Logo (1).png"
+          alt="logo alurageek"
+        />
+        <h2 class="footer__developer">
+          DESARROLLADO POR MIGUEL FALCON <br />
+          <span class="highlight">ALURA LATAM - 2024</span>
+        </h2>
+      </div>
+    </footer>
+  </body>
+</html>
