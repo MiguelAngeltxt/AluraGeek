@@ -1,5 +1,5 @@
 // Definimos la URL de la API donde están los productos
-const API_URL = "http://localhost:3000/products";
+const API_URL = "http://localhost:3001/products";
 
 // Función asincrona para obtener los productos desde la API
 async function getProducts() {
