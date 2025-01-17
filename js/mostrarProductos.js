@@ -20,7 +20,7 @@ function crearCard(name, image, price) {
                   aria-label="Eliminar producto"
                 >
                   <img
-                    src="./images/Vector.png"
+                    src="./images/Vector.png"git
                     alt="Eliminar producto"
                   />
                 </button>
