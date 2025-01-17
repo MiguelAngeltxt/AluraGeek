@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   gap: 58px;
+  max-height: 50vh;
+  margin-bottom: 60px;
 }
 
 .product__title {

@@ -17,34 +17,30 @@
     <main class="main-content">
       <section class="product__section">
         <h1 class="product__title">MIS PRODUCTOS</h1>
-        <div class="product__cards-container">
-          <div class="product__card card">
-            <img
-              class="card__image"
-              src="./images/image 2.png"
-              alt="Producto 1"
-            />
-            <div class="card__info card-container--info">
-              <p class="card__name">Game Boy Classic</p>
-              <div class="card__value card-container--value">
-                <p class="card__price">$ 60,00</p>
-                <img
-                  class="card__trash-icon"
-                  src="./images/Vector.png"
-                  alt="Eliminar producto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="product__cards-container" data-lista></div>
       </section>
       <section class="form">
         <h1 class="form__title">AGREGAR PRODUCTO:</h1>
         <div class="form__container">
-          <form class="form__form" action="">
-            <input class="form__input" type="text" placeholder="nombre..." />
-            <input class="form__input" type="text" placeholder="precio..." />
-            <input class="form__input" type="text" placeholder="imagen..." />
+          <form class="form__form" data-formulario>
+            <input
+              class="form__input"
+              type="text"
+              placeholder="nombre..."
+              data-nombre
+            />
+            <input
+              class="form__input"
+              type="text"
+              placeholder="precio..."
+              data-precio
+            />
+            <input
+              class="form__input"
+              type="text"
+              placeholder="imagen..."
+              data-imagen
+            />
             <div class="form__buttons">
               <input
                 class="form__button form__button--submit"
@@ -74,6 +70,7 @@
         </h2>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script type="module" src="./js/mostrarProductos.js"></script>
+    <script type="module" src="./js/crearProducto.js"></script>
   </body>
 </html>
