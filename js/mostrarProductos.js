@@ -2,10 +2,10 @@ import { conexionAPI } from "./api.js";
 
 const lista = document.querySelector("[data-lista]");
 
-function crearCard(name, image, price) {
+function crearCard(id, name, image, price) {
   const card = document.createElement("div");
   card.classList.add("card");
-  card.innerHTML = `<div class="product__card">
+  card.innerHTML = `<div class="product__card" data-id="${id}">
         <img
             class="card__image"
             src="${image}"
@@ -20,13 +20,17 @@ function crearCard(name, image, price) {
                   aria-label="Eliminar producto"
                 >
                   <img
-                    src="./images/Vector.png"git
+                    src="./images/Vector.png"
                     alt="Eliminar producto"
                   />
                 </button>
             </div>
         </div>
     </div>`;
+
+  // Agregar evento de eliminación
+  const botonEliminar = card.querySelector(".card__trash-icon");
+  botonEliminar.addEventListener("click", () => eliminarProducto(id, card));
 
   return card;
 }
@@ -35,10 +39,21 @@ async function getProducts() {
   try {
     const listAPI = await conexionAPI.getProducts();
     listAPI.forEach((card) =>
-      lista.appendChild(crearCard(card.name, card.image, card.price))
+      lista.appendChild(crearCard(card.id, card.name, card.image, card.price))
     );
   } catch (error) {
     console.error("Error al obtener los productos", error);
+  }
+}
+
+async function eliminarProducto(id, card) {
+  try {
+    const idEliminado = await conexionAPI.eliminarProducto(id);
+    if (idEliminado) {
+      lista.removeChild(card); // Elimina la card del DOM
+    }
+  } catch (error) {
+    console.error("Error al eliminar el producto", error);
   }
 }
 

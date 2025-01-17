@@ -30,7 +30,25 @@ async function crearProducto(name, image, price) {
   return conexionConvertida;
 }
 
+//agregar el metodo DELETE
+async function eliminarProducto(id) {
+  try {
+    const response = await fetch(`${API_URL}/${id}`, {
+      method: "DELETE",
+    });
+
+    if (!response.ok) {
+      throw new Error("Error al eliminar el producto");
+    }
+
+    return id; // Retorna el id del producto eliminado
+  } catch (error) {
+    console.error("Error al eliminar el producto", error);
+  }
+}
+
 export const conexionAPI = {
   getProducts,
   crearProducto,
+  eliminarProducto, // Añadido a la exportación
 };
