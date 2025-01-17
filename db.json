@@ -1,15 +1,27 @@
 {
   "products": [
     {
-      "id": "2",
+      "id": 1,
+      "name": "GRIFFON MINOS",
+      "image": "images/image1.jpeg",
+      "price": "100,000"
+    },
+    {
+      "id": 2,
       "name": "SHIN GETTER",
       "image": "images/image2.jpeg",
       "price": "100,000"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "NICHIRIN SWORD",
       "image": "images/image3.jpeg",
+      "price": "100,000"
+    },
+    {
+      "id": 4,
+      "name": "LEVI FORTITUDE",
+      "image": "images/image4.jpeg",
       "price": "100,000"
     }
   ]

@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 58px;
-  max-height: 50vh;
-  margin-bottom: 60px;
+  height: 50vh;
 }
 
 .product__title {
@@ -15,4 +14,10 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+@media (min-width: 769px) {
+  .product__section {
+    padding: 40px;
+  }
 }

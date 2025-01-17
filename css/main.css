@@ -2,4 +2,12 @@
   display: flex;
   flex-direction: column-reverse;
   gap: 58px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 769px) {
+  .main-content {
+    flex-direction: row;
+    padding: 60px 40px;
+  }
 }

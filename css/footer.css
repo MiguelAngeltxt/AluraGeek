@@ -22,3 +22,10 @@
   font-weight: 200;
   opacity: 0.6;
 }
+
+@media (min-width: 769px) {
+  .footer {
+    height: 232px;
+    width: 100%;
+  }
+}

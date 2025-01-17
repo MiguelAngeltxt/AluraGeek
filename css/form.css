@@ -71,3 +71,9 @@
   background-color: #fff;
   border: 3px solid #03318c;
 }
+
+@media (min-width: 769px) {
+  .form {
+    padding: 0;
+  }
+}
