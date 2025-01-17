@@ -15,7 +15,7 @@ function crearCard(id, name, image, price) {
         <img
             class="card__image"
             src="${image}"
-            alt="Producto 1"
+            alt="Producto"
         />
         <div class="card__info card-container--info">
             <p class="card__name">${name}</p>

@@ -19,5 +19,6 @@
 @media (min-width: 769px) {
   .product__section {
     padding: 40px;
+    max-width: 55%;
   }
 }
